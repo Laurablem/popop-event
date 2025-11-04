@@ -1,0 +1,43 @@
+/* Overlay der ligger ovenpå hele siden */
+.popup-event-overlay {
+  position: fixed;
+  inset: 0; /* top, right, bottom, left = 0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+
+/* Selve popup-boksen */
+.popup-content {
+  background: #ffffff;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Luk-knap (X) */
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Standard: popup er skjult */
+.popup-hidden {
+  display: none;
+}
+
+/* Indholdet i popup'en */
+.popup-body p:last-child {
+  margin-bottom: 0;
+}
