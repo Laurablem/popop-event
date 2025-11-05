@@ -63,19 +63,19 @@ function popup_event_shortcode( $atts ) {
         '1' => array(
             array(
                 'heading' => 'Beach Clean-up 2025',
-                'date' => '15. December 2025, kl 12.30',
+                'date' => '15. December 2025, kl 12.30, Løkken',
                 'description' => 'Kom i julestemning på stranden! Hjælp os med at samle affald, inden vinterstormene skyller det ud i havet. Vi slutter af med varm kakao og hyggesnak.',
                 'color' => '#26376B'
             ),
             array(
                 'heading' => 'Beach Clean-up 2026',
-                'date' => '10. Januar 2026, , kl 12.30',
+                'date' => '10. Januar 2026, , kl 12.30, Aarhus',
                 'description' => 'Start året med en god gerning! Sammen gør vi stranden klar til et grønnere 2026. Tag familien med, så vi sørger for handsker og kaffe og kakao.',
                 'color' => '#26376B'
             ),
             array(
                 'heading' => 'Beach Clean-up 2026',
-                'date' => '20. Februar 2026, , kl 10.30',
+                'date' => '20. Februar 2026, kl 10.30, Hirtshals',
                 'description' => 'Frisk luft, gode mennesker og en ren strand! kom og giv naturen en hånd!',
                 'color' => '#26376B'
             ),
@@ -83,19 +83,19 @@ function popup_event_shortcode( $atts ) {
         '2' => array(
             array(
                 'heading' => 'Beach Walk & Talk & Clean-up 2025',
-                'date' => '20. Juni 2025, kl 12.30',
+                'date' => '20. Juni 2025, kl 12.30, Løkken',
                 'description' => 'Tag en pause fra juleræset og gå en tur langs stranden med os! Vi samler skrald, får frisk luft og gode snakke undervejs.',
                 'color' => '#8bc8e5'
             ),
             array(
-                'heading' => 'Beach Walk & Talk & Clean-up 2025',
-                'date' => '17. Januar 2026, kl 12.00',
+                'heading' => 'Beach Walk & Talk & Clean-up 2026',
+                'date' => '17. Januar 2026, kl 12.00, Aarhus',
                 'description' => 'Nyt år - nye skridt for naturen! Gå med os langs kysten, snak om alt mellem himmel og hav, og hjælp med at rydde op i strandkanten.',
                 'color' => '#8bc8e5'
             ),
             array(
-                'heading' => 'Beach Walk & Talk & Clean-up 2025',
-                'date' => '14. Februar 2026, kl 12.30',
+                'heading' => 'Beach Walk & Talk & Clean-up 2026',
+                'date' => '14. Februar 2026, kl 12.30, Løkken',
                 'description' => 'Gør noget kærligt for både planeten og hinanden! Kom til vores Valentine’s Beach Walk & Talk Clean-up – en hyggelig tur med samtaler, frisk luft og mening.',
                 'color' => '#8bc8e5'
             ),
@@ -103,19 +103,19 @@ function popup_event_shortcode( $atts ) {
         '3' => array(
             array(
                 'heading' => 'Ploggin Run- 5km',
-                'date' => '1. December 2025, kl 12.30',
+                'date' => '1. December 2025, kl 12.30, Aarhus',
                 'description' => 'Løb for både kroppen og planeten! Tag med på en frisk ploggingtur og saml skrald undervejs',
                 'color' => '#b2d1d6'
             ),
             array(
                 'heading' => 'Ploggin Run- 7km',
-                'date' => '16. Januar 2026, kl 11.30',
+                'date' => '16. Januar 2026, kl 11.30, Løkken',
                 'description' => 'Frisk luft, fællesskab og et renere hav. Tag løbeskoene på vi plogger for planeten!.',
                 'color' => '#b2d1d6'
             ),
             array(
                 'heading' => 'Ploggin Run- 10km',
-                'date' => '29. Febuar 2026, kl 10.30',
+                'date' => '29. Febuar 2026, kl 10.30, Løkken',
                 'description' => 'Et hurtigt løb - en stor forskel. Saml skrald, få puls på og hjælp miljøet!',
                 'color' => '#b2d1d6'
             ),
