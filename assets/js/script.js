@@ -1,21 +1,16 @@
 jQuery(document).ready(function($) {
 
-  // Klik på trigger-billedet
-  $(document).on('click', '.popup-event-trigger', function() {
-    var targetId = $(this).data('popup-target');
-    $('#' + targetId).removeClass('popup-hidden');
-  });
-
-  // Klik på luk-knappen
-  $(document).on('click', '.popup-close', function() {
-    $(this).closest('.popup-event-overlay').addClass('popup-hidden');
-  });
-
-  // Klik på mørk baggrund (overlay) lukker også
-  $(document).on('click', '.popup-event-overlay', function(e) {
-    if ($(e.target).is('.popup-event-overlay')) {
-      $(this).addClass('popup-hidden');
-    }
-  });
+    // Click on trigger image to toggle event boxes
+    $(document).on('click', '.event-trigger', function() {
+        var targetId = $(this).data('target');
+        var container = $('#' + targetId);
+        
+        // Toggle visibility with smooth animation
+        if (container.hasClass('event-hidden')) {
+            container.removeClass('event-hidden').addClass('event-visible');
+        } else {
+            container.removeClass('event-visible').addClass('event-hidden');
+        }
+    });
 
 });
