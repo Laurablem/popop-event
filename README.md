@@ -1,5 +1,3 @@
-### hej
-
 # Popup Event Plugin (Storyscaping Eksamen)
 ## Laura Blem Vinkler
 ## Multimediedesigner-studerende, Erhvervsakademiet Aarhus 2025
@@ -63,14 +61,24 @@ Man kan vælge mellem tre forskellige *sets*, som hver indeholder deres eget bil
 [popup_event set="2"]  
 [popup_event set="3"]
 ```
+I PHP registrerer jeg shortcoden sådan her:
+```
+add_shortcode('popup_event', 'popup_event_shortcode');
+```
+
 Jeg bruger ```ob_start()``` til at samle HTML’en, så jeg kan returnere det hele på én gang i stedet for at printe det direkte ud.
 ```
 ob_start();
 // HTML output...
 return ob_get_clean();
 ```
-Hvert *set* genereres ud fra arrays i PHP med billede, overskrift, dato, tekst og farve.
-Der laves et unikt ID til hver instans, så flere events kan ligge på samme side uden at konflikte.
+Jeg bruger også ```shortcode_atts()``` til at sætte en standardværdi for ```set```, og ```uniqid()``` til at give hver shortcode et unikt ID.
+Det sikrer, at jeg kan bruge flere eventsektioner på samme side, uden at de konflikter med hinanden.
+```
+$atts = shortcode_atts(array('set' => '1'), $atts, 'popup_event');
+$uid = uniqid('event-boxes-');
+```
+Hvert *set* henter sit eget **triggerbillede** samt de tre tilhørende **eventbokse** med overskrift, dato, tekst og farve fra et array i PHP.
 
 ## CSS – styling og animation
 
@@ -120,3 +128,27 @@ Her bruger jeg ```max-height``` og ```opacity``` til at skabe en **smooth fold-u
 ```
 Jeg har lavet en **staggered animation**, så hver boks dukker op med små forsinkelser.
 Farverne hentes direkte fra PHP via ```data-color```, så hvert event-set får sit eget udtryk.
+
+### Interaktivitet med jQuery (JavaScript)
+
+Jeg bruger jQuery til at styre den interaktive del af plugin’et.
+Når man klikker på billedet, toggler scriptet mellem klasserne ```.event-visible``` og ```.event-hidden``` for at styre animationen, altså om eventboksene skal være synlige eller skjulte.
+```
+$(document).on('click', '.event-trigger', function() {
+  var targetId = $(this).data('target');
+  $('#' + targetId).toggleClass('event-visible event-hidden');
+});
+```
+Derudover lytter scriptet på scroll, og hvis sektionen kommer helt ud af skærmen, lukker boksene automatisk igen. Det har jeg gjordt for at gøre oplevelsen mere flydende og brugervenlig.
+
+### Design og udtryk
+
+Som tidligere nævnt i “CSS - styling og animation” har jeg visuelt fokuseret på, at designet skal være enkelt, overskueligt og fortællende.
+Billedet fungerer som blikfang og viser med tekst og illustrationer, hvilke forskellige events man kan deltage i.
+
+De tre bokse under billedet viser de kommende datoer for det tilhørende event og giver et tydeligt og let forståeligt overblik – både over beskrivelse, dato, tid og sted.
+
+Hver boks matcher, i farve og hovereffekt, sit tilhørende triggerbillede/event, hvilket gør oplevelsen mere brugervenlig og hjælper med at minimere kognitiv friktion for brugeren.
+
+### Brug af AI
+AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, men al idéudvikling, design og implementering er udført af mig selv.
