@@ -5,13 +5,12 @@
     width: 100%;
     height: auto;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     border-radius: 8px;
 }
 
 .event-trigger:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
     opacity: 0.95;
 }
 
@@ -39,13 +38,11 @@
 .event-box {
     background: #ffffff;
     border: 2px solid #e0e0e0;
-    border-radius: 12px;
     padding: 25px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transform: translateY(-20px);
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /* Stagger animation for boxes */
@@ -69,8 +66,7 @@
 }
 
 .event-box:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    border-color: #4CAF50;
+    border-color: #26376B;
 }
 
 /* Event heading */
@@ -78,7 +74,7 @@
     margin: 0 0 10px 0;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: #26376B;
 }
 
 /* Event date */
@@ -86,7 +82,7 @@
     margin: 0 0 15px 0;
     font-size: 1rem;
     font-weight: 500;
-    color: #4CAF50;
+    color: #26376B;
 }
 
 /* Event description */
@@ -94,7 +90,7 @@
     margin: 0;
     font-size: 1rem;
     line-height: 1.6;
-    color: #666;
+    color: #000000;
 }
 
 /* Wrapper */

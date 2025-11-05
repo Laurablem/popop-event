@@ -63,22 +63,22 @@ function popup_event_shortcode( $atts ) {
             
             <!-- Event 1 -->
             <div class="event-box">
-                <h3 class="event-heading">Julefrokost 2024</h3>
-                <p class="event-date">15. December 2024</p>
+                <h3 class="event-heading">Beach Clean-up 2025</h3>
+                <p class="event-date">15. December 2025</p>
                 <p class="event-description">Kom og fejr julen med os! Der vil være god mad, sjov underholdning og hyggelig stemning. Alle er velkomne.</p>
             </div>
 
             <!-- Event 2 -->
             <div class="event-box">
-                <h3 class="event-heading">Nytårsgalla</h3>
-                <p class="event-date">31. December 2024</p>
+                <h3 class="event-heading">Beach Clean-up 2026</h3>
+                <p class="event-date">10. Januar 2026</p>
                 <p class="event-description">Ring det nye år ind med stil! Gallamiddag, champagne ved midnat og festlig musik hele aftenen.</p>
             </div>
 
             <!-- Event 3 -->
             <div class="event-box">
-                <h3 class="event-heading">Vinterfest</h3>
-                <p class="event-date">20. Januar 2025</p>
+                <h3 class="event-heading">Beach Clean-up 2026</h3>
+                <p class="event-date">14. Februar 2026</p>
                 <p class="event-description">En hyggelig vinteraften med varme drikke, levende musik og masser af hygge. Tag familien med!</p>
             </div>
 
