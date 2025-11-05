@@ -70,11 +70,11 @@
     border-color: #26376B;
 }
 
-.event-box[data-color="#FF6B35"]:hover {
+.event-box[data-color="#8bc8e5"]:hover {
     border-color: #8bc8e5;
 }
 
-.event-box[data-color="#4CAF50"]:hover {
+.event-box[data-color="#b2d1d6"]:hover {
     border-color: #b2d1d6;
 }
 

@@ -63,60 +63,60 @@ function popup_event_shortcode( $atts ) {
         '1' => array(
             array(
                 'heading' => 'Beach Clean-up 2025',
-                'date' => '15. December 2025',
-                'description' => 'Kom og vær med til at gøre en forskel! Vi samler affald på stranden og nyder naturen sammen.',
+                'date' => '15. December 2025, kl 12.30',
+                'description' => 'Kom i julestemning på stranden! Hjælp os med at samle affald, inden vinterstormene skyller det ud i havet. Vi slutter af med varm kakao og hyggesnak.',
                 'color' => '#26376B'
             ),
             array(
                 'heading' => 'Beach Clean-up 2026',
-                'date' => '10. Januar 2026',
-                'description' => 'Start det nye år med at hjælpe miljøet. Sammen gør vi strandens renere og smukkere.',
+                'date' => '10. Januar 2026, , kl 12.30',
+                'description' => 'Start året med en god gerning! Sammen gør vi stranden klar til et grønnere 2026. Tag familien med, så vi sørger for handsker og kaffe og kakao.',
                 'color' => '#26376B'
             ),
             array(
                 'heading' => 'Beach Clean-up 2026',
-                'date' => '14. Februar 2026',
-                'description' => 'En dag ved havet med fokus på bæredygtighed. Tag familien med til en meningsfuld dag.',
+                'date' => '20. Februar 2026, , kl 10.30',
+                'description' => 'Frisk luft, gode mennesker og en ren strand! kom og giv naturen en hånd!',
                 'color' => '#26376B'
             ),
         ),
         '2' => array(
             array(
-                'heading' => 'Sommerfest 2025',
-                'date' => '20. Juni 2025',
-                'description' => 'Fejr sommeren med musik, mad og gode venner. Hele dagen fyldt med sjove aktiviteter.',
+                'heading' => 'Beach Walk & Talk & Clean-up 2025',
+                'date' => '20. Juni 2025, kl 12.30',
+                'description' => 'Tag en pause fra juleræset og gå en tur langs stranden med os! Vi samler skrald, får frisk luft og gode snakke undervejs.',
                 'color' => '#8bc8e5'
             ),
             array(
-                'heading' => 'Grillaften',
-                'date' => '5. Juli 2025',
-                'description' => 'Hyggelig grillaften under åben himmel. Kom og nyd god mad og godt selskab.',
+                'heading' => 'Beach Walk & Talk & Clean-up 2025',
+                'date' => '17. Januar 2026, kl 12.00',
+                'description' => 'Nyt år - nye skridt for naturen! Gå med os langs kysten, snak om alt mellem himmel og hav, og hjælp med at rydde op i strandkanten.',
                 'color' => '#8bc8e5'
             ),
             array(
-                'heading' => 'Havnefest',
-                'date' => '15. August 2025',
-                'description' => 'Store havnefest med livemusik, god mad og festlig stemning ved vandet.',
+                'heading' => 'Beach Walk & Talk & Clean-up 2025',
+                'date' => '14. Februar 2026, kl 12.30',
+                'description' => 'Gør noget kærligt for både planeten og hinanden! Kom til vores Valentine’s Beach Walk & Talk Clean-up – en hyggelig tur med samtaler, frisk luft og mening.',
                 'color' => '#8bc8e5'
             ),
         ),
         '3' => array(
             array(
-                'heading' => 'Julemarked',
-                'date' => '1. December 2025',
-                'description' => 'Besøg vores hyggelige julemarked med håndlavede gaver, varm kakao og julemusik.',
+                'heading' => 'Ploggin Run- 5km',
+                'date' => '1. December 2025, kl 12.30',
+                'description' => 'Løb for både kroppen og planeten! Tag med på en frisk ploggingtur og saml skrald undervejs',
                 'color' => '#b2d1d6'
             ),
             array(
-                'heading' => 'Julekoncert',
-                'date' => '15. December 2025',
-                'description' => 'Smuk julekoncert i kirken med kor, solister og traditionelle julesange.',
+                'heading' => 'Ploggin Run- 7km',
+                'date' => '16. Januar 2026, kl 11.30',
+                'description' => 'Frisk luft, fællesskab og et renere hav. Tag løbeskoene på vi plogger for planeten!.',
                 'color' => '#b2d1d6'
             ),
             array(
-                'heading' => 'Nytårsshow',
-                'date' => '31. December 2025',
-                'description' => 'Spektakulært nytårsshow med fyrværkeri, underholdning og champagne ved midnat.',
+                'heading' => 'Ploggin Run- 10km',
+                'date' => '29. Febuar 2026, kl 10.30',
+                'description' => 'Et hurtigt løb - en stor forskel. Saml skrald, få puls på og hjælp miljøet!',
                 'color' => '#b2d1d6'
             ),
         ),
