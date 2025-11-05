@@ -41,3 +41,27 @@
 .popup-body p:last-child {
   margin-bottom: 0;
 }
+
+/* Styling for the popup trigger image */
+.popup-event-trigger {
+ display: inline-block;
+ max-width: 800px; /* requested maximum width */
+ width: 100%; /* allow it to scale down on small screens */
+ height: auto;
+ cursor: pointer;
+ transition: transform 220ms ease, box-shadow 220ms ease, opacity 220ms ease;
+ will-change: transform, box-shadow, opacity;
+}
+
+
+.popup-event-trigger:hover,
+.popup-event-trigger:focus {
+ transform: translateY(-4px) scale(1.02);
+ box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+ opacity: 0.98;
+}
+
+
+.popup-event-wrapper { /* keep wrapper's inline behavior tidy */
+ max-width: 100%;
+}

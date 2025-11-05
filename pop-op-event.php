@@ -63,7 +63,8 @@ function popup_event_shortcode( $atts, $content = null ) {
              alt="<?php echo esc_attr( $atts['title'] ); ?>"
              class="popup-event-trigger"
              data-popup-target="<?php echo esc_attr( $uid ); ?>"
-             style="cursor:pointer; max-width:200px;">
+            />
+
 
         <!-- Selve popup'en (overlay) -->
         <div id="<?php echo esc_attr( $uid ); ?>" class="popup-event-overlay popup-hidden">
