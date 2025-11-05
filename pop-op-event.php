@@ -3,7 +3,7 @@
  * Plugin Name: Popup Event
  * Plugin URI: http://localhost
  * Description: Popup med datoer til events
- * Version: 1.0.0
+ * Version: 1.2.0
  * Author: LAURA BLEM VINKLER
  * Author URI: http://localhost
  * License: GPL2
@@ -27,7 +27,7 @@ function popup_event_enqueue_assets() {
 
     wp_enqueue_script(
         'popup-event-script',
-        plugin_dir_url( __FILE__ ) . 'assets/css/script.js',
+        plugin_dir_url( __FILE__ ) . 'assets/js/script.js',
         array( 'jquery' ),
         '1.0.0',
         true
@@ -42,7 +42,7 @@ function popup_event_shortcode( $atts, $content = null ) {
     // Standardværdier
     $atts = shortcode_atts(
         array(
-            'img'   => plugin_dir_url( __FILE__ ) . 'popup-trigger.png', // fallback-billede
+            'img'   => plugin_dir_url( __FILE__ ) . 'assets/images/kalenderlang1.jpg', // fallback-billede
             'title' => 'Kommende events',
         ),
         $atts,
