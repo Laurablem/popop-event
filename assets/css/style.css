@@ -42,7 +42,7 @@
     margin-bottom: 20px;
     transform: translateY(-20px);
     opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease, border-color 0.3s ease;
 }
 
 /* Stagger animation for boxes */
@@ -65,8 +65,17 @@
     }
 }
 
-.event-box:hover {
+/* Hover effect uses data-color attribute */
+.event-box[data-color="#26376B"]:hover {
     border-color: #26376B;
+}
+
+.event-box[data-color="#FF6B35"]:hover {
+    border-color: #FF6B35;
+}
+
+.event-box[data-color="#4CAF50"]:hover {
+    border-color: #4CAF50;
 }
 
 /* Event heading */
@@ -74,7 +83,7 @@
     margin: 0 0 10px 0;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #26376B;
+    /* Color set inline per event */
 }
 
 /* Event date */
@@ -82,7 +91,7 @@
     margin: 0 0 15px 0;
     font-size: 1rem;
     font-weight: 500;
-    color: #26376B;
+    /* Color set inline per event */
 }
 
 /* Event description */
@@ -96,4 +105,5 @@
 /* Wrapper */
 .event-wrapper {
     max-width: 100%;
+    margin-bottom: 40px;
 }
