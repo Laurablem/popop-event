@@ -1,7 +1,7 @@
 /* Trigger image styling */
 .event-trigger {
     display: inline-block;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
     cursor: pointer;
