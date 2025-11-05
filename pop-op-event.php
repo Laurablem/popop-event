@@ -85,19 +85,19 @@ function popup_event_shortcode( $atts ) {
                 'heading' => 'Sommerfest 2025',
                 'date' => '20. Juni 2025',
                 'description' => 'Fejr sommeren med musik, mad og gode venner. Hele dagen fyldt med sjove aktiviteter.',
-                'color' => '#FF6B35'
+                'color' => '#8bc8e5'
             ),
             array(
                 'heading' => 'Grillaften',
                 'date' => '5. Juli 2025',
                 'description' => 'Hyggelig grillaften under åben himmel. Kom og nyd god mad og godt selskab.',
-                'color' => '#FF6B35'
+                'color' => '#8bc8e5'
             ),
             array(
                 'heading' => 'Havnefest',
                 'date' => '15. August 2025',
                 'description' => 'Store havnefest med livemusik, god mad og festlig stemning ved vandet.',
-                'color' => '#FF6B35'
+                'color' => '#8bc8e5'
             ),
         ),
         '3' => array(
@@ -105,19 +105,19 @@ function popup_event_shortcode( $atts ) {
                 'heading' => 'Julemarked',
                 'date' => '1. December 2025',
                 'description' => 'Besøg vores hyggelige julemarked med håndlavede gaver, varm kakao og julemusik.',
-                'color' => '#4CAF50'
+                'color' => '#ede0ca'
             ),
             array(
                 'heading' => 'Julekoncert',
                 'date' => '15. December 2025',
                 'description' => 'Smuk julekoncert i kirken med kor, solister og traditionelle julesange.',
-                'color' => '#4CAF50'
+                'color' => '#ede0ca'
             ),
             array(
                 'heading' => 'Nytårsshow',
                 'date' => '31. December 2025',
                 'description' => 'Spektakulært nytårsshow med fyrværkeri, underholdning og champagne ved midnat.',
-                'color' => '#4CAF50'
+                'color' => '#ede0ca'
             ),
         ),
     );

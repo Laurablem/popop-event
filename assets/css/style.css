@@ -71,11 +71,11 @@
 }
 
 .event-box[data-color="#FF6B35"]:hover {
-    border-color: #FF6B35;
+    border-color: #8bc8e5;
 }
 
 .event-box[data-color="#4CAF50"]:hover {
-    border-color: #4CAF50;
+    border-color: #ede0ca;
 }
 
 /* Event heading */
