@@ -2,16 +2,16 @@
 ## Laura Blem Vinkler
 ## Multimediedesigner-studerende, Erhvervsakademiet Aarhus 2025
 
-Jeg har udviklet plugin’et til at vise et overskueligt og visuelt pænt overblik over kommende events.
-Plugin’et indeholder tre forskellige events, hvor eventboksene folder sig ud med bløde animationer, når man klikker på billedet.
-Hver boks viser dato og en kort beskrivelse af det enkelte event.
+Jeg har udviklet plugin’et til at give et overskueligt og visuelt indbydende overblik over kommende events.
+Plugin’et indeholder tre forskellige typer events, hvor man klikker på eventillustrationen/billedet, og de tilhørende eventbokse folder sig ud med bløde animationer.
+Hver boks viser dato, sted og en kort beskrivelse af det enkelte event.
 
-Boksene lukker igen ved klik – eller automatisk, når man scroller forbi sektionen.
-Det giver en levende og visuelt spændende måde at præsentere events på – som fx Beach Clean-ups, Walk & Talk, Plogging Runs og generelt fællesaktiviteter.
+Boksene lukker igen ved klik, eller automatisk, når man scroller forbi sektionen.
+Det giver en overskuelig, levende og visuelt spændende måde at præsentere events på, som fx Beach Clean-ups, Walk & Talk, Plogging Runs og generelt fællesaktiviteter.
 
 ## Opbygning
 
-* Et klikbart billede fungerer som udløser (trigger) for at vise eventinformation.
+* En klikbar eventillustration/billede fungerer som udløser (trigger) for at vise eventinformation.
 
 * Når man klikker, glider tre bokse ned med slide-down-effekt.
 
@@ -19,7 +19,7 @@ Det giver en levende og visuelt spændende måde at præsentere events på – s
 
 * Der findes tre sæt events (set="1", "2", "3"), som kan skiftes via shortcode.
 
-## PHP – struktur og funktion
+## PHP - struktur og funktion
 Jeg sørger for her, at man ikke kan tilgå plugin-filen direkte uden om WordPress.
 ```
 if (!defined('ABSPATH')) { exit; }
@@ -50,7 +50,7 @@ Her bruges ```plugin_dir_url(__FILE__)``` til at finde filstierne automatisk,
 og ```true``` i ```wp_enqueue_script``` sørger for, at scriptet bliver loadet i footeren,
 så siden kan indlæses hurtigere, og jQuery først kører, når hele HTML’en er klar.
 
-## Shortcode
+## Shortcode og brug
 Selve indholdet vises via en shortcode:
 ```
 [popup_event set="1"]
@@ -80,9 +80,9 @@ $uid = uniqid('event-boxes-');
 ```
 Hvert *set* henter sit eget **triggerbillede** samt de tre tilhørende **eventbokse** med overskrift, dato, tekst og farve fra et array i PHP.
 
-## CSS – styling og animation
+## CSS - styling og animation
 
-Jeg har holdt designet enkelt og roligt med små bevægelser og tilpasset sitets farver, og de enkelte events/trigger-billeder.
+Jeg har holdt designet enkelt og roligt med små bevægelser og tilpasset det til sitets farver og de enkelte events/trigger-billeder.
 
 ### Trigger-billede
 ```
@@ -139,16 +139,23 @@ $(document).on('click', '.event-trigger', function() {
   $('#' + targetId).toggleClass('event-visible event-hidden');
 });
 ```
-Derudover lytter scriptet på scroll, og hvis sektionen kommer helt ud af skærmen, lukker boksene automatisk igen. Det har jeg gjordt for at gøre oplevelsen mere flydende og brugervenlig.
+Derudover lytter scriptet på scroll, og hvis sektionen kommer helt ud af skærmen, lukker boksene automatisk igen. Det har jeg gjort for at gøre oplevelsen mere flydende og brugervenlig.
 
 ### Design og udtryk
 
 Som tidligere nævnt i “CSS - styling og animation” har jeg visuelt fokuseret på, at designet skal være enkelt, overskueligt og fortællende.
 Billedet fungerer som blikfang og viser med tekst og illustrationer, hvilke forskellige events man kan deltage i.
 
-De tre bokse under billedet viser de kommende datoer for det tilhørende event og giver et tydeligt og let forståeligt overblik – både over beskrivelse, dato, tid og sted.
+De tre bokse under billedet viser de kommende datoer for det tilhørende event og giver et tydeligt og let forståeligt overblik, både over beskrivelse, dato, tid og sted.
 
 Hver boks matcher, i farve og hovereffekt, sit tilhørende triggerbillede/event, hvilket gør oplevelsen mere brugervenlig og hjælper med at minimere kognitiv friktion for brugeren.
 
 ### Brug af AI
-AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, men al idéudvikling, design og implementering er udført af mig selv.
+AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, men idéudvikling, design og implementering er udført af mig selv.
+
+### Konklusion
+
+Jeg har udviklet dette plugin for at skabe en mere interaktiv og engagerende måde at præsentere events på i WordPress.
+
+Ved at kombinere PHP, CSS og jQuery har jeg opnået et let, responsivt og brugervenligt plugin, der både er funktionelt og visuelt tiltalende.
+Processen har givet mig en bedre forståelse for, hvordan backend og frontend hænger sammen i WordPress-udvikling.
