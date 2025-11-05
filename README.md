@@ -74,7 +74,7 @@ Der laves et unikt ID til hver instans, så flere events kan ligge på samme sid
 
 ## CSS – styling og animation
 
-Jeg har holdt designet enkelt og roligt med små bevægelser og tilpasset sitets farver, og de enkelte events/trigger-billede.
+Jeg har holdt designet enkelt og roligt med små bevægelser og tilpasset sitets farver, og de enkelte events/trigger-billeder.
 
 ### Trigger-billede
 ```
@@ -89,3 +89,34 @@ Jeg har holdt designet enkelt og roligt med små bevægelser og tilpasset sitets
   opacity: 0.95;
 }
 ```
+Når man holder musen over billedet, får det et lille “løft” for at vise brugeren, at det er klikbart.
+
+### Event-container
+```
+.event-boxes-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, opacity 0.5s ease;
+}
+.event-boxes-container.event-visible {
+  max-height: 2000px;
+  opacity: 1;
+}
+```
+Her bruger jeg ```max-height``` og ```opacity``` til at skabe en **smooth fold-ud animation**.
+
+### Eventbokse
+```
+.event-box {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  padding: 25px;
+  margin-bottom: 20px;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+```
+Jeg har lavet en **staggered animation**, så hver boks dukker op med små forsinkelser.
+Farverne hentes direkte fra PHP via ```data-color```, så hvert event-set får sit eget udtryk.
