@@ -75,7 +75,7 @@ function popup_event_shortcode( $atts ) {
             ),
             array(
                 'heading' => 'Beach Clean-up',
-                'date' => '20. Februar 2026, kl 10.30, Hirtshals',
+                'date' => '1. Februar 2026, kl 10.30, Hirtshals',
                 'description' => 'Frisk luft, gode mennesker og en ren strand! kom og giv naturen en hånd!',
                 'color' => '#26376B'
             ),
