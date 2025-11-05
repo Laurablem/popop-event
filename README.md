@@ -21,5 +21,71 @@ Det giver en levende og visuelt spændende måde at præsentere events på – s
 
 * Der findes tre sæt events (set="1", "2", "3"), som kan skiftes via shortcode.
 
+## PHP – struktur og funktion
+Jeg sørger for her, at man ikke kan tilgå plugin-filen direkte uden om WordPress.
+```
+if (!defined('ABSPATH')) { exit; }
+```
+## Indlæsning af CSS og JavaScript
 
+Jeg har oprettet en funktion, der loader mine filer korrekt ind i WordPress:
+```
+function popup_event_enqueue_assets() {
+    wp_enqueue_style(
+        'popup-event-style',
+        plugin_dir_url(__FILE__) . 'assets/css/style.css',
+        array(),
+        '3.0.0'
+    );
 
+    wp_enqueue_script(
+        'popup-event-script',
+        plugin_dir_url(__FILE__) . 'assets/js/script.js',
+        array('jquery'),
+        '3.0.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'popup_event_enqueue_assets');
+```
+Her bruges ```plugin_dir_url(__FILE__)``` til at finde filstierne automatisk,
+og ```true``` i ```wp_enqueue_script``` sørger for, at scriptet bliver loadet i footeren,
+så siden kan indlæses hurtigere, og jQuery først kører, når hele HTML’en er klar.
+
+## Shortcode
+Selve indholdet vises via en shortcode:
+```
+[popup_event set="1"]
+```
+Man kan vælge mellem tre forskellige *sets*, som hver indeholder deres eget billede, farver og events:
+```
+[popup_event set="1"]  
+[popup_event set="2"]  
+[popup_event set="3"]
+```
+Jeg bruger ```ob_start()``` til at samle HTML’en, så jeg kan returnere det hele på én gang i stedet for at printe det direkte ud.
+```
+ob_start();
+// HTML output...
+return ob_get_clean();
+```
+Hvert *set* genereres ud fra arrays i PHP med billede, overskrift, dato, tekst og farve.
+Der laves et unikt ID til hver instans, så flere events kan ligge på samme side uden at konflikte.
+
+## CSS – styling og animation
+
+Jeg har holdt designet enkelt og roligt med små bevægelser og tilpasset sitets farver, og de enkelte events/trigger-billede.
+
+### Trigger-billede
+```
+.event-trigger {
+  width: 100%;
+  max-width: 1500px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.event-trigger:hover {
+  transform: translateY(-4px) scale(1.02);
+  opacity: 0.95;
+}
+```
