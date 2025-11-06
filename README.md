@@ -163,6 +163,9 @@ AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, me
 
 <img width="1285" height="422" alt="Skærmbillede 2025-11-06 kl  13 26 35" src="https://github.com/user-attachments/assets/8e784331-f72d-4c40-ade0-faaad91a0196" />
 
+#### Validering af CSS
+<img width="1357" height="466" alt="Skærmbillede 2025-11-06 kl  13 30 24" src="https://github.com/user-attachments/assets/4673e883-ba2b-4d42-8061-97d7c78bc133" />
+
 
 ### Konklusion
 
