@@ -160,7 +160,7 @@ AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, me
 
 ### Validering af kode
 #### Validering af PHP
-Jeg har brugt [bairesdev.com] (https://www.bairesdev.com/tools/phpcodechecker/) til at validerer min PHP fil
+Jeg har brugt [bairesdev.com](https://www.bairesdev.com/tools/phpcodechecker/) til at validerer min PHP fil
 <img width="1285" height="422" alt="Skærmbillede 2025-11-06 kl  13 26 35" src="https://github.com/user-attachments/assets/8e784331-f72d-4c40-ade0-faaad91a0196" />
 
 #### Validering af CSS
