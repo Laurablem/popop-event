@@ -1,11 +1,11 @@
 jQuery(document).ready(function($) {
 
-    // Click on trigger image to toggle event boxes
+    // Når man klikker på triggerbilledet/eventillustrationen, åbnes eller lukkes eventboksene
     $(document).on('click', '.event-trigger', function() {
         var targetId = $(this).data('target');
         var container = $('#' + targetId);
         
-        // Toggle visibility with smooth animation
+        // Toggler mellem synlig og skjult med en glidende animation
         if (container.hasClass('event-hidden')) {
             container.removeClass('event-hidden').addClass('event-visible');
         } else {
@@ -13,13 +13,13 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // Collapse boxes when scrolled out of view
+    // Lukker eventboksene automatisk, når man scroller væk fra sektionen
     $(window).on('scroll', function() {
         $('.event-wrapper').each(function() {
             var wrapper = $(this);
             var container = wrapper.find('.event-boxes-container');
             
-            // Only check if boxes are currently visible
+            // Kører kun, hvis eventboksene er åbne. Bruges til at tjekke, om de skal lukkes ved scroll
             if (container.hasClass('event-visible')) {
                 var wrapperTop = wrapper.offset().top;
                 var wrapperBottom = wrapperTop + wrapper.outerHeight();
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
                 var windowHeight = $(window).height();
                 var windowBottom = scrollTop + windowHeight;
                 
-                // If wrapper is completely out of view (above or below), collapse it
+                // Lukker eventboksene automatisk, når sektionen ikke længere er synlig på skærmen (uden for viewport)
                 if (wrapperBottom < scrollTop || wrapperTop > windowBottom) {
                     container.removeClass('event-visible').addClass('event-hidden');
                 }
