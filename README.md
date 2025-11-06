@@ -2,15 +2,14 @@
 ## Laura Blem Vinkler
 ## Multimediedesigner-studerende, Erhvervsakademiet Aarhus 2025
 
-![Skærmoptagelse 2025-11-06 kl  12 07 18](https://github.com/user-attachments/assets/930fb3da-c725-4eac-9555-9534244719cc)
-
-
 Jeg har udviklet plugin’et til at give et overskueligt og visuelt indbydende overblik over kommende events.
 Plugin’et indeholder tre forskellige typer events, hvor man klikker på eventillustrationen/billedet, og de tilhørende eventbokse folder sig ud med bløde animationer.
 Hver boks viser dato, sted og en kort beskrivelse af det enkelte event.
 
 Boksene lukker igen ved klik, eller automatisk, når man scroller forbi sektionen.
 Det giver en overskuelig, levende og visuelt spændende måde at præsentere events på, som fx Beach Clean-ups, Walk & Talk, Plogging Runs og generelt fællesaktiviteter.
+
+![Skærmoptagelse 2025-11-06 kl  12 07 18](https://github.com/user-attachments/assets/930fb3da-c725-4eac-9555-9534244719cc)
 
 ## Opbygning
 
