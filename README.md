@@ -164,11 +164,11 @@ Jeg har brugt [bairesdev.com](https://www.bairesdev.com/tools/phpcodechecker/) t
 <img width="1285" height="422" alt="Skærmbillede 2025-11-06 kl  13 26 35" src="https://github.com/user-attachments/assets/8e784331-f72d-4c40-ade0-faaad91a0196" />
 
 #### Validering af CSS
-Jeg har brugt `https://jigsaw.w3.org/css-validator/` til at validerer mit CSS
+Jeg har brugt [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/) til at validerer mit CSS
 <img width="1357" height="466" alt="Skærmbillede 2025-11-06 kl  13 30 24" src="https://github.com/user-attachments/assets/4673e883-ba2b-4d42-8061-97d7c78bc133" />
 
 #### Validering af Script
-Jeg har brugt `https://esprima.org/demo/validate.html` til at validerer mit Script
+Jeg har brugt [esprima.org](https://esprima.org/demo/validate.html) til at validerer mit Script
 <img width="667" height="484" alt="Skærmbillede 2025-11-06 kl  13 34 54" src="https://github.com/user-attachments/assets/d8c94e9c-05ce-4e50-9820-11ccc7e164e0" />
 
 
