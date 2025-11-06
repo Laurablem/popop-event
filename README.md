@@ -160,19 +160,21 @@ AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, me
 
 ### Validering af kode
 #### Validering af PHP
-
+Jeg har brugt `https://www.bairesdev.com/tools/phpcodechecker/` til at validerer min PHP fil
 <img width="1285" height="422" alt="Skærmbillede 2025-11-06 kl  13 26 35" src="https://github.com/user-attachments/assets/8e784331-f72d-4c40-ade0-faaad91a0196" />
 
 #### Validering af CSS
+Jeg har brugt `https://jigsaw.w3.org/css-validator/` til at validerer mit CSS
 <img width="1357" height="466" alt="Skærmbillede 2025-11-06 kl  13 30 24" src="https://github.com/user-attachments/assets/4673e883-ba2b-4d42-8061-97d7c78bc133" />
 
 #### Validering af Script
+Jeg har brugt `https://esprima.org/demo/validate.html` til at validerer mit Script
 <img width="667" height="484" alt="Skærmbillede 2025-11-06 kl  13 34 54" src="https://github.com/user-attachments/assets/d8c94e9c-05ce-4e50-9820-11ccc7e164e0" />
 
 
 ### Konklusion
 
-Jeg har udviklet dette plugin for at skabe en mere interaktiv og engagerende måde at præsentere events på i WordPress.
+Jeg har udviklet pluginet for at skabe en mere interaktiv og engagerende måde at præsentere events på i WordPress.
 
 Ved at kombinere PHP, CSS og jQuery har jeg opnået et let, responsivt og brugervenligt plugin, der både er funktionelt og visuelt tiltalende.
 Processen har givet mig en bedre forståelse for, hvordan backend og frontend hænger sammen i WordPress-udvikling.
