@@ -66,12 +66,15 @@ I PHP registrerer jeg shortcoden sådan her:
 add_shortcode('popup_event', 'popup_event_shortcode');
 ```
 
-Jeg bruger ```ob_start()``` til at samle HTML’en, så jeg kan returnere det hele på én gang i stedet for at printe det direkte ud.
+Jeg bruger ```ob_start()``` til at samle HTML’en i en buffer, så alt output returneres samlet med ```ob_get_clean()```.
+Det gør koden både mere effektiv og lettere at læse, i stedet for at skulle bygge HTML’en manuelt i en variabel, som fx ```$content```.
+
 ```
 ob_start();
 // HTML output...
 return ob_get_clean();
 ```
+
 Jeg bruger også ```shortcode_atts()``` til at sætte en standardværdi for ```set```, og ```uniqid()``` til at give hver shortcode et unikt ID.
 Det sikrer, at jeg kan bruge flere eventsektioner på samme side, uden at de konflikter med hinanden.
 ```
