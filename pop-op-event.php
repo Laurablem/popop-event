@@ -2,8 +2,8 @@
 /*
  * Plugin Name: Popup Event
  * Plugin URI: http://localhost
- * Description: 3 event boxes that slide down smoothly
- * Version: 3.0.0
+ * Description: Tre bokse med events, der glider ned med en blød animation
+ * Version: 3.6.0
  * Author: LAURA BLEM VINKLER
  * Author URI: http://localhost
  * License: GPL2
