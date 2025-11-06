@@ -9,13 +9,13 @@
  * License: GPL2
  */
 
-// Sikkerhed: stop direkte adgang
+// Sikkerhed: sørger for, at filen kun kan tilgås via WordPress og ikke direkte i browseren
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
 /**
- * Indlæs CSS og JS
+ * Indlæs pluginets CSS og JS
  */
 function popup_event_enqueue_assets() {
     wp_enqueue_style(
@@ -37,12 +37,12 @@ add_action( 'wp_enqueue_scripts', 'popup_event_enqueue_assets' );
 
 /**
  * Shortcode: [popup_event set="1"]
- * Use set="1", set="2", or set="3" to show different event sets
+ * set="1", set="2" eller set="3" vælger hvilket event-sæt der skal vises
  */
 function popup_event_shortcode( $atts ) {
     $atts = shortcode_atts(
         array(
-            'set' => '1', // Which event set to display (1, 2, or 3)
+            'set' => '1', // Hvilket event-sæt der skal vises (1, 2 eller 3)
         ),
         $atts,
         'popup_event'
@@ -51,14 +51,14 @@ function popup_event_shortcode( $atts ) {
     $set = $atts['set'];
     $uid = uniqid( 'event-boxes-' );
 
-    // Define images for each set
+    // Billeder/eventillustration til hvert sæt (ét triggerbillede/eventillustration pr. set)
     $images = array(
         '1' => plugin_dir_url( __FILE__ ) . 'assets/images/kalenderlang1.jpg',
         '2' => plugin_dir_url( __FILE__ ) . 'assets/images/kalenderlang2.jpg',
         '3' => plugin_dir_url( __FILE__ ) . 'assets/images/kalenderlang3.jpg',
     );
 
-    // Define events for each set
+    // Event-data til hvert sæt (overskrift, dato, tekst og farve)
     $events = array(
         '1' => array(
             array(
@@ -122,20 +122,21 @@ function popup_event_shortcode( $atts ) {
         ),
     );
 
-    // Get the image and events for this set
+    // Finder det rigtige billede/eventillustration og de rigtige events ud fra valgt set
     $img_url = isset($images[$set]) ? $images[$set] : $images['1'];
     $event_list = isset($events[$set]) ? $events[$set] : $events['1'];
 
+    // Jeg samler al HTML’en først, så alt kan sendes ud samlet, når shortcoden kaldes
     ob_start();
     ?>
     <div class="event-wrapper">
-        <!-- Trigger billede -->
+        <!-- Klikbart trigger-billede som åbner/lukker eventboksene -->
         <img src="<?php echo esc_url( $img_url ); ?>"
              alt="Se kommende events"
              class="event-trigger"
              data-target="<?php echo esc_attr( $uid ); ?>">
 
-        <!-- Event boxes container -->
+        <!-- Container som indeholder de tre eventbokse -->
         <div id="<?php echo esc_attr( $uid ); ?>" class="event-boxes-container event-hidden">
             
             <?php foreach ( $event_list as $event ) : ?>
@@ -153,6 +154,7 @@ function popup_event_shortcode( $atts ) {
         </div>
     </div>
     <?php
+    // Returnerer det samlede HTML-output, så det vises der, hvor shortcoden indsættes
     return ob_get_clean();
 }
 add_shortcode( 'popup_event', 'popup_event_shortcode' );
