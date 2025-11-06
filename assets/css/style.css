@@ -1,4 +1,4 @@
-/* Trigger image styling */
+/* Styling af triggerbilledet/eventillustrationen */
 .event-trigger {
     display: inline-block;
     max-width: 1500px;
@@ -9,12 +9,13 @@
     border-radius: 8px;
 }
 
+/* Lidt bevægelse ved hover, som giver brugeren en fornemmelse af klikbarhed */
 .event-trigger:hover {
     transform: translateY(-4px) scale(1.02);
     opacity: 0.95;
 }
 
-/* Container for event boxes */
+/* Containeren der indeholder de tre eventbokse (starter skjult) */
 .event-boxes-container {
     margin-top: 30px;
     max-height: 0;
@@ -23,18 +24,20 @@
     transition: max-height 0.6s ease, opacity 0.5s ease, margin-top 0.6s ease;
 }
 
+/* Når containeren bliver synlig – udvider sig blødt, så boksene kan folde ud */
 .event-boxes-container.event-visible {
     max-height: 2000px;
     opacity: 1;
 }
 
+/* Skjuler eventbokse igen, når man scroller væk eller klikker på triggerbilledet/eventillustrationen */
 .event-hidden {
     max-height: 0 !important;
     opacity: 0 !important;
     margin-top: 0 !important;
 }
 
-/* Individual event box */
+/* Styling af hver enkelt eventboks */
 .event-box {
     background: #ffffff;
     border: 2px solid #e0e0e0;
@@ -45,7 +48,7 @@
     transition: transform 0.5s ease, opacity 0.5s ease, border-color 0.3s ease;
 }
 
-/* Stagger animation for boxes */
+/* Staggered animation, der får boksene til at dukke op forskudt for hinanden */
 .event-visible .event-box:nth-child(1) {
     animation: slideDown 0.6s ease forwards 0.1s;
 }
@@ -58,6 +61,7 @@
     animation: slideDown 0.6s ease forwards 0.5s;
 }
 
+/* Animationen der styrer den glidende bevægelse ned */
 @keyframes slideDown {
     to {
         transform: translateY(0);
@@ -65,7 +69,7 @@
     }
 }
 
-/* Hover effect uses data-color attribute */
+/* Hoverfarver hentes fra PHP via data-color */
 .event-box[data-color="#26376B"]:hover {
     border-color: #26376B;
 }
@@ -78,12 +82,12 @@
     border-color: #b2d1d6;
 }
 
-/* Event heading */
+/* Overskrift i eventboks */
 .event-heading {
     margin: 0 0 10px 0;
     font-size: 1.5rem;
     font-weight: 600;
-    /* Color set inline per event */
+    /* Farven kommer fra PHP, så hvert event får sin egen */
 }
 
 /* Event date */
@@ -94,7 +98,7 @@
     /* Color set inline per event */
 }
 
-/* Event description */
+/* Beskrivelsen af eventet */
 .event-description {
     margin: 0;
     font-size: 1rem;
@@ -102,7 +106,7 @@
     color: #000000;
 }
 
-/* Wrapper */
+/* Wrapper der samler hele pluginet */
 .event-wrapper {
     max-width: 100%;
     margin-bottom: 40px;
