@@ -2,7 +2,7 @@
 ## Laura Blem Vinkler
 ## Multimediedesigner-studerende, Erhvervsakademiet Aarhus 2025
 
-![Uploading Skærmoptagelse 2025-11-06 kl. 11.58.59.gif…]()
+![Skærmoptagelse 2025-11-06 kl  11 58 59](https://github.com/user-attachments/assets/a41eb82e-0ac8-46f5-a9cc-d06e56c96929)
 
 Jeg har udviklet plugin’et til at give et overskueligt og visuelt indbydende overblik over kommende events.
 Plugin’et indeholder tre forskellige typer events, hvor man klikker på eventillustrationen/billedet, og de tilhørende eventbokse folder sig ud med bløde animationer.
