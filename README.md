@@ -158,6 +158,12 @@ Hver boks matcher, i farve og hovereffekt, sit tilhørende triggerbillede/event,
 ### Brug af AI
 AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, men idéudvikling, design og implementering er udført af mig selv.
 
+### Validering af kode
+#### Validering af PHP
+
+<img width="1285" height="422" alt="Skærmbillede 2025-11-06 kl  13 26 35" src="https://github.com/user-attachments/assets/8e784331-f72d-4c40-ade0-faaad91a0196" />
+
+
 ### Konklusion
 
 Jeg har udviklet dette plugin for at skabe en mere interaktiv og engagerende måde at præsentere events på i WordPress.
