@@ -156,7 +156,7 @@ De tre bokse under billedet viser de kommende datoer for det tilhørende event o
 Hver boks matcher, i farve og hovereffekt, sit tilhørende triggerbillede/event, hvilket gør oplevelsen mere brugervenlig og hjælper med at minimere kognitiv friktion for brugeren.
 
 ### Brug af AI
-AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, men idéudvikling, design og implementering er udført af mig selv.
+AI er blevet brugt som sparringsværktøj til struktur og optimering af kode, men idéudvikling, design og implementering er udført af mig selv. Jeg har brugt Chat GPT og Claude.ai som mine AI værktøjer.
 
 ### Validering af kode
 #### Validering af PHP
